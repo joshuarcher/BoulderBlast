@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3C1CCAFC-33EA-400C-B6EA-CFC9A2C7A612</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BoulderBlast</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DE2A2F3C89AEC5E8B04F03C28B609A0C2E2CEEAC</key>
+		<string>github.com:joshuarcher/BoulderBlast.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BoulderBlast.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DE2A2F3C89AEC5E8B04F03C28B609A0C2E2CEEAC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:joshuarcher/BoulderBlast.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DE2A2F3C89AEC5E8B04F03C28B609A0C2E2CEEAC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DE2A2F3C89AEC5E8B04F03C28B609A0C2E2CEEAC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BoulderBlast%202</string>
+		</dict>
+	</array>
+</dict>
+</plist>
