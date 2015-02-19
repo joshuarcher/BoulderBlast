@@ -21,6 +21,8 @@ public:
     virtual int move();
     virtual void cleanUp();
     
+    std::list<Actor*> getActors() const;
+    
 
 //	virtual int init()
 //	{
@@ -40,6 +42,14 @@ public:
 
 private:
     std::list<Actor*> m_actorList;
+    Actor* m_player;
+    
 };
+
+inline
+std::list<Actor*> StudentWorld::getActors() const
+{
+    return m_actorList;
+}
 
 #endif // STUDENTWORLD_H_

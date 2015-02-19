@@ -29,43 +29,43 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		039B72021A92A9AE0009DB22 /* ammo.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ammo.tga; sourceTree = "<group>"; };
-		039B72031A92A9AE0009DB22 /* boulder.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = boulder.tga; sourceTree = "<group>"; };
-		039B72041A92A9AE0009DB22 /* bullet.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = bullet.tga; sourceTree = "<group>"; };
-		039B72051A92A9AE0009DB22 /* clank.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clank.wav; sourceTree = "<group>"; };
-		039B72061A92A9AE0009DB22 /* die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = die.wav; sourceTree = "<group>"; };
-		039B72071A92A9AE0009DB22 /* dude_1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = dude_1.tga; sourceTree = "<group>"; };
-		039B72081A92A9AE0009DB22 /* dude_2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = dude_2.tga; sourceTree = "<group>"; };
-		039B72091A92A9AE0009DB22 /* dude_3.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = dude_3.tga; sourceTree = "<group>"; };
-		039B720A1A92A9AE0009DB22 /* exit.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = exit.tga; sourceTree = "<group>"; };
-		039B720B1A92A9AE0009DB22 /* explode.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explode.wav; sourceTree = "<group>"; };
-		039B720C1A92A9AE0009DB22 /* extralife.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = extralife.tga; sourceTree = "<group>"; };
-		039B720D1A92A9AE0009DB22 /* factory.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = factory.tga; sourceTree = "<group>"; };
-		039B720E1A92A9AE0009DB22 /* finished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = finished.wav; sourceTree = "<group>"; };
-		039B720F1A92A9AE0009DB22 /* goodie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goodie.wav; sourceTree = "<group>"; };
-		039B72101A92A9AE0009DB22 /* hole.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = hole.tga; sourceTree = "<group>"; };
-		039B72111A92A9AE0009DB22 /* jewel.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = jewel.tga; sourceTree = "<group>"; };
-		039B72121A92A9AE0009DB22 /* kleptobot-1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kleptobot-1.tga"; sourceTree = "<group>"; };
-		039B72131A92A9AE0009DB22 /* kleptobot-2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kleptobot-2.tga"; sourceTree = "<group>"; };
-		039B72141A92A9AE0009DB22 /* kleptobot-3.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kleptobot-3.tga"; sourceTree = "<group>"; };
-		039B72151A92A9AE0009DB22 /* level00.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = level00.dat; sourceTree = "<group>"; };
-		039B72161A92A9AE0009DB22 /* level01.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = level01.dat; sourceTree = "<group>"; };
-		039B72171A92A9AE0009DB22 /* level02.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = level02.dat; sourceTree = "<group>"; };
-		039B72181A92A9AE0009DB22 /* level03.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = level03.dat; sourceTree = "<group>"; };
-		039B72191A92A9AE0009DB22 /* level04.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = level04.dat; sourceTree = "<group>"; };
-		039B721A1A92A9AE0009DB22 /* materialize.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = materialize.wav; sourceTree = "<group>"; };
-		039B721B1A92A9AE0009DB22 /* medkit.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = medkit.tga; sourceTree = "<group>"; };
-		039B721C1A92A9AE0009DB22 /* munch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = munch.wav; sourceTree = "<group>"; };
-		039B721D1A92A9AE0009DB22 /* ouch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ouch.wav; sourceTree = "<group>"; };
-		039B721E1A92A9AE0009DB22 /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
-		039B721F1A92A9AE0009DB22 /* revealexit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = revealexit.wav; sourceTree = "<group>"; };
-		039B72201A92A9AE0009DB22 /* snarlbot-1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snarlbot-1.tga"; sourceTree = "<group>"; };
-		039B72211A92A9AE0009DB22 /* snarlbot-2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snarlbot-2.tga"; sourceTree = "<group>"; };
-		039B72221A92A9AE0009DB22 /* snarlbot-3.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snarlbot-3.tga"; sourceTree = "<group>"; };
-		039B72231A92A9AE0009DB22 /* snarlbot-4.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snarlbot-4.tga"; sourceTree = "<group>"; };
-		039B72241A92A9AE0009DB22 /* theme.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = theme.wav; sourceTree = "<group>"; };
-		039B72251A92A9AE0009DB22 /* torpedo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = torpedo.wav; sourceTree = "<group>"; };
-		039B72261A92A9AE0009DB22 /* wall.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall.tga; sourceTree = "<group>"; };
+		0350F9F81A96551900B35E02 /* ammo.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ammo.tga; sourceTree = "<group>"; };
+		0350F9F91A96551900B35E02 /* boulder.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = boulder.tga; sourceTree = "<group>"; };
+		0350F9FA1A96551900B35E02 /* bullet.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = bullet.tga; sourceTree = "<group>"; };
+		0350F9FB1A96551900B35E02 /* clank.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clank.wav; sourceTree = "<group>"; };
+		0350F9FC1A96551900B35E02 /* die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = die.wav; sourceTree = "<group>"; };
+		0350F9FD1A96551900B35E02 /* dude_1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = dude_1.tga; sourceTree = "<group>"; };
+		0350F9FE1A96551900B35E02 /* dude_2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = dude_2.tga; sourceTree = "<group>"; };
+		0350F9FF1A96551900B35E02 /* dude_3.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = dude_3.tga; sourceTree = "<group>"; };
+		0350FA001A96551900B35E02 /* exit.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = exit.tga; sourceTree = "<group>"; };
+		0350FA011A96551900B35E02 /* explode.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explode.wav; sourceTree = "<group>"; };
+		0350FA021A96551900B35E02 /* extralife.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = extralife.tga; sourceTree = "<group>"; };
+		0350FA031A96551900B35E02 /* factory.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = factory.tga; sourceTree = "<group>"; };
+		0350FA041A96551900B35E02 /* finished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = finished.wav; sourceTree = "<group>"; };
+		0350FA051A96551900B35E02 /* goodie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goodie.wav; sourceTree = "<group>"; };
+		0350FA061A96551900B35E02 /* hole.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = hole.tga; sourceTree = "<group>"; };
+		0350FA071A96551900B35E02 /* jewel.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = jewel.tga; sourceTree = "<group>"; };
+		0350FA081A96551900B35E02 /* kleptobot-1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kleptobot-1.tga"; sourceTree = "<group>"; };
+		0350FA091A96551900B35E02 /* kleptobot-2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kleptobot-2.tga"; sourceTree = "<group>"; };
+		0350FA0A1A96551900B35E02 /* kleptobot-3.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kleptobot-3.tga"; sourceTree = "<group>"; };
+		0350FA0B1A96551900B35E02 /* level00.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = level00.dat; sourceTree = "<group>"; };
+		0350FA0C1A96551900B35E02 /* level01.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = level01.dat; sourceTree = "<group>"; };
+		0350FA0D1A96551900B35E02 /* level02.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = level02.dat; sourceTree = "<group>"; };
+		0350FA0E1A96551900B35E02 /* level03.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = level03.dat; sourceTree = "<group>"; };
+		0350FA0F1A96551900B35E02 /* level04.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = level04.dat; sourceTree = "<group>"; };
+		0350FA101A96551900B35E02 /* materialize.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = materialize.wav; sourceTree = "<group>"; };
+		0350FA111A96551900B35E02 /* medkit.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = medkit.tga; sourceTree = "<group>"; };
+		0350FA121A96551900B35E02 /* munch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = munch.wav; sourceTree = "<group>"; };
+		0350FA131A96551900B35E02 /* ouch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ouch.wav; sourceTree = "<group>"; };
+		0350FA141A96551900B35E02 /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
+		0350FA151A96551900B35E02 /* revealexit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = revealexit.wav; sourceTree = "<group>"; };
+		0350FA161A96551900B35E02 /* snarlbot-1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snarlbot-1.tga"; sourceTree = "<group>"; };
+		0350FA171A96551900B35E02 /* snarlbot-2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snarlbot-2.tga"; sourceTree = "<group>"; };
+		0350FA181A96551900B35E02 /* snarlbot-3.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snarlbot-3.tga"; sourceTree = "<group>"; };
+		0350FA191A96551900B35E02 /* snarlbot-4.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snarlbot-4.tga"; sourceTree = "<group>"; };
+		0350FA1A1A96551900B35E02 /* theme.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = theme.wav; sourceTree = "<group>"; };
+		0350FA1B1A96551900B35E02 /* torpedo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = torpedo.wav; sourceTree = "<group>"; };
+		0350FA1C1A96551900B35E02 /* wall.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall.tga; sourceTree = "<group>"; };
 		4B5BB2611A9110AA009A9A96 /* BoulderBlast */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BoulderBlast; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5BB2641A9110AA009A9A96 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4B5BB26B1A911293009A9A96 /* Actor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Actor.cpp; sourceTree = "<group>"; };
@@ -99,49 +99,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		039B72011A92A9AE0009DB22 /* Assets */ = {
+		0350F9F71A96551900B35E02 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				039B72021A92A9AE0009DB22 /* ammo.tga */,
-				039B72031A92A9AE0009DB22 /* boulder.tga */,
-				039B72041A92A9AE0009DB22 /* bullet.tga */,
-				039B72051A92A9AE0009DB22 /* clank.wav */,
-				039B72061A92A9AE0009DB22 /* die.wav */,
-				039B72071A92A9AE0009DB22 /* dude_1.tga */,
-				039B72081A92A9AE0009DB22 /* dude_2.tga */,
-				039B72091A92A9AE0009DB22 /* dude_3.tga */,
-				039B720A1A92A9AE0009DB22 /* exit.tga */,
-				039B720B1A92A9AE0009DB22 /* explode.wav */,
-				039B720C1A92A9AE0009DB22 /* extralife.tga */,
-				039B720D1A92A9AE0009DB22 /* factory.tga */,
-				039B720E1A92A9AE0009DB22 /* finished.wav */,
-				039B720F1A92A9AE0009DB22 /* goodie.wav */,
-				039B72101A92A9AE0009DB22 /* hole.tga */,
-				039B72111A92A9AE0009DB22 /* jewel.tga */,
-				039B72121A92A9AE0009DB22 /* kleptobot-1.tga */,
-				039B72131A92A9AE0009DB22 /* kleptobot-2.tga */,
-				039B72141A92A9AE0009DB22 /* kleptobot-3.tga */,
-				039B72151A92A9AE0009DB22 /* level00.dat */,
-				039B72161A92A9AE0009DB22 /* level01.dat */,
-				039B72171A92A9AE0009DB22 /* level02.dat */,
-				039B72181A92A9AE0009DB22 /* level03.dat */,
-				039B72191A92A9AE0009DB22 /* level04.dat */,
-				039B721A1A92A9AE0009DB22 /* materialize.wav */,
-				039B721B1A92A9AE0009DB22 /* medkit.tga */,
-				039B721C1A92A9AE0009DB22 /* munch.wav */,
-				039B721D1A92A9AE0009DB22 /* ouch.wav */,
-				039B721E1A92A9AE0009DB22 /* pop.wav */,
-				039B721F1A92A9AE0009DB22 /* revealexit.wav */,
-				039B72201A92A9AE0009DB22 /* snarlbot-1.tga */,
-				039B72211A92A9AE0009DB22 /* snarlbot-2.tga */,
-				039B72221A92A9AE0009DB22 /* snarlbot-3.tga */,
-				039B72231A92A9AE0009DB22 /* snarlbot-4.tga */,
-				039B72241A92A9AE0009DB22 /* theme.wav */,
-				039B72251A92A9AE0009DB22 /* torpedo.wav */,
-				039B72261A92A9AE0009DB22 /* wall.tga */,
+				0350F9F81A96551900B35E02 /* ammo.tga */,
+				0350F9F91A96551900B35E02 /* boulder.tga */,
+				0350F9FA1A96551900B35E02 /* bullet.tga */,
+				0350F9FB1A96551900B35E02 /* clank.wav */,
+				0350F9FC1A96551900B35E02 /* die.wav */,
+				0350F9FD1A96551900B35E02 /* dude_1.tga */,
+				0350F9FE1A96551900B35E02 /* dude_2.tga */,
+				0350F9FF1A96551900B35E02 /* dude_3.tga */,
+				0350FA001A96551900B35E02 /* exit.tga */,
+				0350FA011A96551900B35E02 /* explode.wav */,
+				0350FA021A96551900B35E02 /* extralife.tga */,
+				0350FA031A96551900B35E02 /* factory.tga */,
+				0350FA041A96551900B35E02 /* finished.wav */,
+				0350FA051A96551900B35E02 /* goodie.wav */,
+				0350FA061A96551900B35E02 /* hole.tga */,
+				0350FA071A96551900B35E02 /* jewel.tga */,
+				0350FA081A96551900B35E02 /* kleptobot-1.tga */,
+				0350FA091A96551900B35E02 /* kleptobot-2.tga */,
+				0350FA0A1A96551900B35E02 /* kleptobot-3.tga */,
+				0350FA0B1A96551900B35E02 /* level00.dat */,
+				0350FA0C1A96551900B35E02 /* level01.dat */,
+				0350FA0D1A96551900B35E02 /* level02.dat */,
+				0350FA0E1A96551900B35E02 /* level03.dat */,
+				0350FA0F1A96551900B35E02 /* level04.dat */,
+				0350FA101A96551900B35E02 /* materialize.wav */,
+				0350FA111A96551900B35E02 /* medkit.tga */,
+				0350FA121A96551900B35E02 /* munch.wav */,
+				0350FA131A96551900B35E02 /* ouch.wav */,
+				0350FA141A96551900B35E02 /* pop.wav */,
+				0350FA151A96551900B35E02 /* revealexit.wav */,
+				0350FA161A96551900B35E02 /* snarlbot-1.tga */,
+				0350FA171A96551900B35E02 /* snarlbot-2.tga */,
+				0350FA181A96551900B35E02 /* snarlbot-3.tga */,
+				0350FA191A96551900B35E02 /* snarlbot-4.tga */,
+				0350FA1A1A96551900B35E02 /* theme.wav */,
+				0350FA1B1A96551900B35E02 /* torpedo.wav */,
+				0350FA1C1A96551900B35E02 /* wall.tga */,
 			);
 			name = Assets;
-			path = DerivedData/BoulderBlast/Build/Products/Debug/Assets;
+			path = DerivedData/BoulderBlast/Assets;
 			sourceTree = "<group>";
 		};
 		4B5BB2581A9110AA009A9A96 = {
@@ -151,7 +151,7 @@
 				4B5BB27D1A91160A009A9A96 /* GLUT.framework */,
 				4B5BB2631A9110AA009A9A96 /* BoulderBlast */,
 				4B5BB2621A9110AA009A9A96 /* Products */,
-				039B72011A92A9AE0009DB22 /* Assets */,
+				0350F9F71A96551900B35E02 /* Assets */,
 			);
 			sourceTree = "<group>";
 		};

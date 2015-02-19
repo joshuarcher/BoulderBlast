@@ -14,19 +14,32 @@ class Actor : public GraphObject
 public:
     Actor(int imageID, int startX, int startY, Direction dir = none, StudentWorld* sWorld = nullptr);
     
+    virtual ~Actor()
+    {
+        getGraphObjects().erase(this);
+    }
+    
     virtual void doSomething() = 0;
+    bool isAlive();
+    
+    virtual bool canMove(int x, int y) const = 0;
+    
+    virtual StudentWorld* getWorld() const;
+    virtual void setDead();
     
     // GETTERS
-    int getAmmo();
+    
     int getHp();
     
     // SETTERS
-    void setAmmo(int am);
+    
     void setHp(int hp);
     
+    
+    
 private:
-    int m_ammo;
     int m_hp;
+    bool m_alive;
     StudentWorld* m_sWorld;
     
 };
@@ -35,13 +48,15 @@ class Player : public Actor
 {
 public:
     Player(int startX, int startY, StudentWorld* sWorld);
-    void doSomething()
-    {
-        std::cerr << "PLAYER DOING SOMETHING\n";
-    }
+    void doSomething();
+    
+    virtual bool canMove(int x, int y) const;
+    
+    void setAmmo(int am);
+    int getAmmo();
     
 private:
-    
+    int m_ammo;
     
 };
 
@@ -49,10 +64,21 @@ class Wall : public Actor
 {
 public:
     Wall(int startX, int startY, StudentWorld* sWorld);
+    
+    virtual ~Wall()
+    {
+        getGraphObjects().erase(this);
+    }
+    
     void doSomething()
     {
-        std::cerr << "WALL DOING SOMETHING\n";
     }
+    
+    virtual bool canMove(int x, int y) const
+    {
+        return false;
+    }
+    
 private:
 };
 
