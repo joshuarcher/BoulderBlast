@@ -48,10 +48,10 @@ int StudentWorld::init()
                     
                     {
                         case Level::player:
-                            m_player = new Player(i,j,this);
+                            m_player = new Player(this, i, j);
                             break;
                         case Level::wall:
-                            m_actorList.push_front(new Wall(i,j,this));
+                            m_actorList.push_front(new Wall(this, i, j));
                             // m_actorList.push_front(new Wall(i,j,this));
                             break;
                         case Level::empty:

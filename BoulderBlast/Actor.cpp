@@ -7,26 +7,31 @@
 /////             ACTOR             /////
 /////////////////////////////////////////
 
-Actor::Actor(int imageID, int startX, int startY, Direction dir, StudentWorld* sWorld)
-: GraphObject(imageID, startX, startY, dir), m_sWorld(sWorld), m_hp(0), m_alive(true)
+
+Actor::Actor(StudentWorld* world, int startX, int startY, int imageID, unsigned int hitPoints, Direction startDir)
+: GraphObject(imageID, startX, startY, startDir), m_alive(true), m_sWorld(world), m_hp(hitPoints)
 {
     setVisible(true);
-    
 }
 
-int Actor::getHp()
-{
-    return m_hp;
-}
-
-void Actor::setHp(int hp)
-{
-    m_hp = hp;
-}
-
-bool Actor::isAlive()
+bool Actor::isAlive() const
 {
     return m_alive;
+}
+
+void Actor::setDead()
+{
+    m_alive = false;
+    setVisible(false);
+}
+
+void Actor::decHitPoints(unsigned int amt)
+{
+    if (m_hp == 0 || amt == 0) {
+        return;
+    }
+    m_hp--;
+    decHitPoints(amt - 1);
 }
 
 StudentWorld* Actor::getWorld() const
@@ -34,10 +39,103 @@ StudentWorld* Actor::getWorld() const
     return m_sWorld;
 }
 
-void Actor::setDead()
+bool Actor::allowsAgentColocation() const
 {
-    m_alive = false;
+    return false;
 }
+
+bool Actor::allowsBoulder() const
+{
+    return false;
+}
+
+bool Actor::countsInFactoryCensus() const
+{
+    return false;
+}
+
+bool Actor::stopsBullet() const
+{
+    return true;
+}
+
+bool Actor::isDamageable() const
+{
+    return true;
+}
+
+void Actor::damage(unsigned int damageAmt)
+{
+    decHitPoints(damageAmt);
+}
+
+bool Actor::isSwallowable() const
+{
+    return false;
+}
+
+bool Actor::isStealable() const
+{
+    return false;
+}
+
+unsigned int Actor::getHitPoints() const
+{
+    return m_hp;
+}
+
+void Actor::getHitPoints(int amt)
+{
+    m_hp = amt;
+}
+
+bool Actor::tryToBeKilled(unsigned int damageAmt)
+{
+    damage(damageAmt);
+    if (m_hp == 0) {
+        return true;
+    }
+    return false;
+}
+
+
+/////////////////////////////////////////
+/////             AGENT             /////
+/////////////////////////////////////////
+
+Agent::Agent(StudentWorld* world, int startX, int startY, int imageID, unsigned int hitPoints, Direction startDir)
+: Actor(world, startX, startY, imageID, hitPoints, startDir)
+{
+    
+}
+
+bool Agent::moveIfPossible()
+{
+    return true;
+}
+
+bool Agent::canPushBoulders() const
+{
+    return false;
+}
+
+bool Agent::needsClearShot() const
+{
+    return false;
+}
+
+int Agent::shootingSound() const
+{
+    return 0;
+}
+
+bool Agent::canMove(int x, int y) const
+{
+    return false;
+}
+
+
+
 
 
 
@@ -45,20 +143,10 @@ void Actor::setDead()
 /////             PLAYER            /////
 /////////////////////////////////////////
 
-Player::Player(int startX, int startY, StudentWorld* sWorld)
-:Actor(IID_PLAYER, startX, startY, right, sWorld), m_ammo(20)
+Player::Player(StudentWorld* world, int startX, int startY)
+: Agent(world, startX, startY, IID_PLAYER, 20, right), m_ammo(20)
 {
-    setHp(20);
-}
-
-int Player::getAmmo()
-{
-    return m_ammo;
-}
-
-void Player::setAmmo(int am)
-{
-    m_ammo = am;
+    
 }
 
 void Player::doSomething()
@@ -75,7 +163,7 @@ void Player::doSomething()
                 setDead();
                 break;
             case KEY_PRESS_SPACE:
-                getWorld()->playSound(SOUND_PLAYER_FIRE);
+                getWorld()->playSound(shootingSound());
                 break;
             case KEY_PRESS_UP:
                 setDirection(up);
@@ -118,19 +206,84 @@ bool Player::canMove(int x, int y) const
     return true;
 }
 
+bool Player::isDamageable() const
+{
+    return true;
+}
 
+void Player::damage(unsigned int damageAmt)
+{
+    decHitPoints(2);
+    
+    if (getHitPoints() == 0) {
+        getWorld()->playSound(SOUND_PLAYER_DIE);
+        setDead();
+    }
+    
+    getWorld()->playSound(SOUND_PLAYER_IMPACT);
+    
+}
 
+bool Player::canPushBoulders() const
+{
+    return true;
+}
 
+bool Player::needsClearShot() const
+{
+    return false;
+}
+
+int Player::shootingSound() const
+{
+    return SOUND_PLAYER_FIRE;
+}
+
+unsigned int Player::getHealthPct() const
+{
+    double health = getHitPoints();
+    
+    health = (health/20) * 100;
+    return health;
+}
+
+unsigned int Player::getAmmo() const
+{
+    return m_ammo;
+}
+
+void Player::restoreHealth()
+{
+    getHitPoints(20);
+}
+
+void Player::increaseAmmo()
+{
+    m_ammo += 20;
+}
 
 /////////////////////////////////////////
 /////             WALL              /////
 /////////////////////////////////////////
 
-Wall::Wall(int startX, int startY, StudentWorld* sWorld)
-:Actor(IID_WALL, startX, startY, none, sWorld)
+Wall::Wall(StudentWorld* world, int startX, int startY)
+: Actor(world, startX, startY, IID_WALL, 0, none)
 {
-    setHp(0);
+    
 }
+
+void Wall::doSomething()
+{
+    return;
+}
+
+bool Wall::stopsBullet() const
+{
+    return true;
+}
+
+
+
 
 
 
